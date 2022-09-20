@@ -1,0 +1,24 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-store-1
+spec:
+  selector:
+    matchLabels:
+      "store": "7010700668"
+      # "edge": "heavy"
+      # "facility": "combination"
+      # "state": "ak"
+
+---
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-store-2
+spec:
+  selector:
+    matchLabels:
+      "store": "7010700011"
+      # "edge": "heavy"
+      # "facility": "combination"
+      # "state": "ak"

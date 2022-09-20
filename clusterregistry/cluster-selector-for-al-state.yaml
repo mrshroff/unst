@@ -1,0 +1,11 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-for-al
+spec:
+  selector:
+    matchLabels:
+      "edge": "heavy"
+      "facility": "combination"
+      "state": "al"
+#      "store": "7010700011"

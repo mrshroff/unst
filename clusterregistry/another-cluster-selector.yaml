@@ -1,0 +1,12 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-with-expression
+spec:
+  selector:
+    matchExpressions:
+      - key: "state"
+        operator: NotIn
+        values:
+        - "ak"
+        - "al"

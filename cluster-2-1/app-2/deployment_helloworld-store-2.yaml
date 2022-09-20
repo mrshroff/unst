@@ -6,6 +6,8 @@ metadata:
     app: helloworld-store-2
   name: helloworld-store-2
   namespace: app-2
+  annotations:
+    configmanagement.gke.io/cluster-selector: "selector-store-2"
 spec:
   replicas: 2
   selector:

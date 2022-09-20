@@ -1,0 +1,31 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: "cluster-1-1"
+  labels:
+    "edge": "heavy"
+    "facility": "combination"
+    "state": "ak"
+    "store": "7010700668"
+
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: "cluster-2-1"
+  labels:
+    "edge": "heavy"
+    "facility": "combination"
+    "state": "ak"
+    "store": "7010700011"
+
+---
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: "cluster-3-1"
+  labels:
+    "edge": "heavy"
+    "facility": "marketplace"
+    "state": "al"
+    "store": "0110n00310"
