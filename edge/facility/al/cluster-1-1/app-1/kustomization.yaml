@@ -1,5 +1,5 @@
 bases:
--../../../../../base
+- ../../../../../base
 namePrefix: store-1-
 namespace: app-1
 images:
