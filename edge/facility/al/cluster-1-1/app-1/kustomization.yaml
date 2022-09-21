@@ -8,3 +8,5 @@ images:
   newTag: 1.0.1
 commonAnnotations:
   configmanagement.gke.io/cluster-selector: "selector-store-1"
+resource:
+- ../../../../../clusterregistry/cluster-selector.yaml
