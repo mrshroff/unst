@@ -1,0 +1,8 @@
+namePrefix: store-1-
+namespace: app-1
+images:
+- name: signalsciences/example-helloworld:latest
+  newName: kubegoldenguide/nginx-hostname
+  newTag: 1.0.1
+commonAnnotations:
+  configmanagement.gke.io/cluster-selector: "selector-store-1"
