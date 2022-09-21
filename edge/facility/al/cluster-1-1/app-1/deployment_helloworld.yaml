@@ -19,8 +19,8 @@ spec:
         app: helloworld
     spec:
       containers:
-      - args:
-        - localhost:8000
+#      - args:
+#        - localhost:8000
         image: kubegoldenguide/nginx-hostname:1.0.1
         imagePullPolicy: IfNotPresent
         name: helloworld
