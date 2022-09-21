@@ -2,3 +2,4 @@ resources:
 - namespace.yaml
 - service.yaml
 - deployment.yaml
+- ../../../../../clusterregistry/cluster-selector.yaml
