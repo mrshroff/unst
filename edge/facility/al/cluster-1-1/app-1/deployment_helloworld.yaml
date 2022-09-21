@@ -21,9 +21,9 @@ spec:
       containers:
       - args:
         - localhost:8000
-        image: signalsciences/example-helloworld:latest
+        image: registry.k8s.io/echoserver:1.4
         imagePullPolicy: IfNotPresent
         name: helloworld
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
           protocol: TCP
