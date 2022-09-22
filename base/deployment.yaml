@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: helloworld
-  name: helloworld
+  name: helloworld12
   namespace: app-1
 spec:
   replicas: 2
