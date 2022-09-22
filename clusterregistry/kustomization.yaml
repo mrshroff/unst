@@ -1,0 +1,3 @@
+resources:
+- cluster-1-lable.yaml
+- cluster-selector.yaml
