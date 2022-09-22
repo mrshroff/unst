@@ -2,5 +2,5 @@ resources:
 - namespace.yaml
 - service.yaml
 - deployment.yaml
-- /clusterregistry/cluster-label.yaml
-- /clusterregistry/cluster-selector.yaml
+- cluster-label.yaml
+- cluster-selector.yaml
