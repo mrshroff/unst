@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-store-1
+  name: app-1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-store-1
+  labels:
+    app: helloworld
+  name: store-1-helloworld12
+  namespace: app-1
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: helloworld
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-store-1
+  labels:
+    app: helloworld
+  name: store-1-helloworld12
+  namespace: app-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: helloworld
+  template:
+    metadata:
+      annotations:
+        configmanagement.gke.io/cluster-selector: selector-store-1
+      labels:
+        app: helloworld
+    spec:
+      containers:
+      - image: kubegoldenguide/nginx-hostname:1.0.1
+        imagePullPolicy: IfNotPresent
+        name: helloworld
+        ports:
+        - containerPort: 80
+          protocol: TCP
