@@ -1,7 +1,7 @@
 bases:
 - ../../../../../../base
 namePrefix: store-2-
-namespace: app-2
+namespace: app-1
 images:
 - name: signalsciences/example-helloworld:latest
   newName: kubegoldenguide/nginx-hostname
